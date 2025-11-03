@@ -1,0 +1,50 @@
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .6rem .8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+button {
+    width: fit-content;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: .6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+button:hover {
+    background: #333;
+}
+
+.contact-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    color: #006fff;
+    text-decoration: none;
+    font-weight: 500;
+}

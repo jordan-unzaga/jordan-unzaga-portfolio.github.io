@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Jordan Unzaga</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+</head>
+<body>
+<div id="navbar"></div>
+
+<main class="page-wrapper">
+    <h1>Contact</h1>
+    <p class="sub">Got a question about one of my projects?</p>
+
+    <!-- simple mailto form -->
+    <form action="mailto:jordan.unzaga22@gmail.com" method="post" enctype="text/plain">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Which project are you asking about?"></textarea>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</main>
+
+<script src="../script/navbar.js"></script>
+</body>
+</html>

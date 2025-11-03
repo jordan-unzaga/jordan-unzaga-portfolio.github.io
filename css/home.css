@@ -1,0 +1,120 @@
+.hero {
+    background: linear-gradient(180deg, #f7faff 0%, #ffffff 100%);
+    padding: 4rem 2rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1 1 360px;
+    text-align: left;
+    min-width: 280px;
+}
+
+.hero-text h1 {
+    font-size: 2.4rem;
+    color: #111;
+    margin-bottom: .5rem;
+}
+
+.hero-text p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+}
+
+.highlight {
+    color: #006fff;
+    font-weight: 600;
+}
+
+.hero-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    border: 3px solid #6dadff;
+    flex-shrink: 0;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* === Featured projects === */
+/* make it fit with your page-wrapper */
+.featured {
+    background: none;        /* remove white background */
+    box-shadow: none;        /* remove outer shadow */
+    border-radius: 0;        /* no rounded corners */
+    padding: 0;              /* rely on .page-wrapper spacing */
+}
+
+.featured h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #6dadff;
+    display: inline-block;
+    padding-bottom: .3rem;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.05);
+    padding: 1.5rem;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #111;
+}
+
+.project-card p {
+    color: #555;
+    font-size: .95rem;
+}
+
+@media (max-width: 700px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
